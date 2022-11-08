@@ -11,7 +11,7 @@ UI Design
 
 🔵Search Result with modal
 
-
+![Capture](https://user-images.githubusercontent.com/84698562/200545180-f8f574e1-c769-481e-b313-a6364ffffae1.PNG)
 
 
 
