@@ -2,7 +2,7 @@
 UI Design
 
 🔵Home Page
-
+![Capture](https://user-images.githubusercontent.com/84698562/200544533-773c7b39-a316-4041-a953-a453f4f5e04e.PNG)
 
 
 
