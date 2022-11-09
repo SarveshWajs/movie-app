@@ -7,14 +7,14 @@ const apikey = 'c82363bd';
 
 app.get('/getMovie', (req,res)=>{
 const title = req.query.title;
-const querystr = `https://api.themoviedb.org/3/search/company?${title}api_key=${apikey}`;
+const querystr = `http://www.omdbapi.com/?t=${title}&apikey=${apikey}`;
     axios.get(querystr).then((response)=>{
     Title = response.data.Title;
     Year = response.data.Year;
     Director = response.data.Director;
 
     filmValue = new Record({
-        movieTitle:original_title,
+        movieTitle:Title,
         movieYear:Year,
         movieDirector:Director,
     });
@@ -37,9 +37,9 @@ app.get('/deleteMovie',(req, res)=>{
             if (err) return handleError(err);
             //deleted at most one tanked docuement
         });
-      
-        res.send(Title +  "<br>" + "Record Deleted");
+
+        res.send(Title + "deleted");
     
 });
 
-app.listen(3001);
+app.listen(5000);
