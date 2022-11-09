@@ -48,10 +48,11 @@ function App() {
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="/home">Trending</a></li>
+                            &nbsp; &nbsp; &nbsp; 
                             <Form className="d-flex" onSubmit={searchMovie} autoComplete="off">
               <FormControl
               type="search"
-              placeholder="Search For Books"
+              placeholder="Search For Movies"
               className="me-2"
               aria-label="search"
               name="query"
@@ -103,3 +104,4 @@ function App() {
 }
 
 export default App;
+
